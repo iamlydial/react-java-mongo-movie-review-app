@@ -29,8 +29,10 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="/" element={<Home movies={movies} />}></Route>
-          <Route path="/Trailer/:ytTrailerID" element={Trailer}></Route>
+          <Route index element={<Home movies={movies} />}></Route>
+          <Route path="/Trailer/:ytTrailerID" element={<Trailer />}></Route>
+          
+                      
         </Route>
       </Routes>
     </div>
