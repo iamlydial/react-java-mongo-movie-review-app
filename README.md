@@ -17,7 +17,7 @@ This is a full-stack web application that allows users to browse movies, watch t
 
 - **Browse Movies**: Users can scroll through a list of movies fetched from the IMDB API.
 
-![App Screenshot](screenshots/Screenshot_1.png)
+![App Screenshot](screenshots/Screenshot_3.png)
 
 - **Watch Trailers**: Integrated with React Player to watch movie trailers.
 
@@ -25,7 +25,7 @@ This is a full-stack web application that allows users to browse movies, watch t
 
 - **Add Reviews**: Users can write and submit reviews for movies.
 
-![App Screenshot](screenshots/Screenshot_3.png)
+![App Screenshot](screenshots/Screenshot_1.png)
 
 - **Responsive Design**: The UI is built using Bootstrap to ensure responsiveness across different devices.
 
