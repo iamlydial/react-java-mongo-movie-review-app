@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# Movie Review App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack web application that allows users to browse movies, watch trailers, and add reviews. The app uses the IMDB API to fetch movie details and provides users with an interface to interact with these movies, including watching trailers and writing reviews.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Setup Instructions](#setup-instructions)
+- [Frontend](#frontend)
+- [Backend](#backend)
+- [Running the Application](#running-the-application)
+- [API Endpoints](#api-endpoints)
+- [Future Improvements](#future-improvements)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Browse Movies**: Users can scroll through a list of movies fetched from the IMDB API.
+- **Watch Trailers**: Integrated with React Player to watch movie trailers.
+- **Add Reviews**: Users can write and submit reviews for movies.
+- **Responsive Design**: The UI is built using Bootstrap to ensure responsiveness across different devices.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React**: For building the user interface.
+- **React Router**: For handling routing in the app.
+- **React Player**: For embedding and playing movie trailers.
+- **Bootstrap**: For responsive design and styling.
+- **Axios**: For making API requests to the backend.
 
-### `npm run build`
+### Backend
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Java Spring Boot**: As the backend framework to build RESTful APIs.
+- **Spring Data JPA**: For database interaction.
+- **Mongo Database**: An in-memory database for development and testing purposes.
+- **IMDB API**: Used to fetch movie data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Setup Instructions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To run this project locally, you will need to have Node.js, npm, Java, and Maven installed on your machine.
 
-### `npm run eject`
+### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Navigate to the frontend directory**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    cd frontend
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    npm install
+    ```
 
-## Learn More
+3. **Start the React development server**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    This will run the frontend on `http://localhost:3000`.
 
-### Code Splitting
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Navigate to the backend directory**:
 
-### Analyzing the Bundle Size
+    ```bash
+    cd backend
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. **Build the project using Maven**:
 
-### Making a Progressive Web App
+    ```bash
+    mvn clean install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+3. **Run the Spring Boot application**:
 
-### Advanced Configuration
+    ```bash
+    mvn spring-boot:run
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    The backend will be running on `http://localhost:8080`.
 
-### Deployment
+## Running the Application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Make sure both the frontend and backend servers are running.
+2. Open a web browser and navigate to `http://localhost:3000`.
+3. You can now browse movies, watch trailers, and add reviews.
 
-### `npm run build` fails to minify
+## API Endpoints
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The backend server provides the following API endpoints:
+
+- **GET /api/v1/movies**: Fetches a list of movies from the IMDB API.
+- **POST /api/v1/reviews**: Adds a new review for a specific movie.
+- **GET /api/v1/reviews/{movieId}**: Fetches reviews for a specific movie.
+
+## Future Improvements
+
+- **User Authentication**: Add user authentication and authorization for managing reviews.
+- **Database Integration**: Move from H2 to a more scalable database solution (e.g., MySQL, PostgreSQL).
+- **Search and Filter**: Implement search and filter functionality to make browsing easier.
+- **Rating System**: Allow users to rate movies in addition to writing reviews.
+
+## License
+
+This project is open-source and available under the MIT License.
