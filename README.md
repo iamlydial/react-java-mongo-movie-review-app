@@ -16,8 +16,17 @@ This is a full-stack web application that allows users to browse movies, watch t
 ## Features
 
 - **Browse Movies**: Users can scroll through a list of movies fetched from the IMDB API.
+
+![App Screenshot](screenshots/Screenshot_1.png)
+
 - **Watch Trailers**: Integrated with React Player to watch movie trailers.
+
+![App Screenshot](screenshots/Screenshot_2.png)
+
 - **Add Reviews**: Users can write and submit reviews for movies.
+
+![App Screenshot](screenshots/Screenshot_3.png)
+
 - **Responsive Design**: The UI is built using Bootstrap to ensure responsiveness across different devices.
 
 ## Technologies Used
@@ -45,45 +54,45 @@ To run this project locally, you will need to have Node.js, npm, Java, and Maven
 
 1. **Navigate to the frontend directory**:
 
-    ```bash
-    cd frontend
-    ```
+   ```bash
+   cd frontend
+   ```
 
 2. **Install dependencies**:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 3. **Start the React development server**:
 
-    ```bash
-    npm start
-    ```
+   ```bash
+   npm start
+   ```
 
-    This will run the frontend on `http://localhost:3000`.
+   This will run the frontend on `http://localhost:3000`.
 
 ### Backend
 
 1. **Navigate to the backend directory**:
 
-    ```bash
-    cd backend
-    ```
+   ```bash
+   cd backend
+   ```
 
 2. **Build the project using Maven**:
 
-    ```bash
-    mvn clean install
-    ```
+   ```bash
+   mvn clean install
+   ```
 
 3. **Run the Spring Boot application**:
 
-    ```bash
-    mvn spring-boot:run
-    ```
+   ```bash
+   mvn spring-boot:run
+   ```
 
-    The backend will be running on `http://localhost:8080`.
+   The backend will be running on `http://localhost:8080`.
 
 ## Running the Application
 
